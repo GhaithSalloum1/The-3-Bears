@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     color: #222222;
+    box-sizing: border-box;
 }
 
 :root{
@@ -17,7 +18,7 @@ body {
 /* Footer Section */
 footer {
     background-color: var(--footer-background-color);
-    padding: 48px 80px;
+    padding: 48px 40px;
     border-top: 1px solid #DDDDDD;
     font-size: 14px;
 }
@@ -27,7 +28,6 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: left;
-    
 }
 
 
