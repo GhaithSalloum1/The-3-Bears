@@ -12,6 +12,16 @@ footer {
     font-size: 14px;
 }
 
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    
+}
+
+
+
 .footer-section h3 {
     font-size: 14px;
     font-weight: 600;
@@ -60,4 +70,15 @@ footer {
     gap: 16px;
 }
 
+hr{
+    border: none;
+    height: 1px;
+    background-color: #eeecec;
+}
+
+.footer-bottom-right{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
 
