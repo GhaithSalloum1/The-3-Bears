@@ -1,105 +1,858 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Airbnb</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header-top">
-            <div class="logo-container">
-                <img src="images/title_image.png" alt="Airbnb Logo" class="logo">
-            </div>
+      <div class="header-top">
+        <div class="logo-container">
+          <img src="images/title_image.png" alt="Airbnb Logo" class="logo" />
         </div>
+      </div>
 
-        <nav>
-            <div class="nav-item"><a href="index.html">Main</a></div>
-            <div class="nav-item"><a href="#">Services</a></div>
-            <div class="nav-item"><a href="#">Experiences</a></div>
-            <div class="nav-item"><a href="#">List</a></div>
-        </nav>
+      <nav>
+        <div class="nav-item"><a href="index.html">Main</a></div>
+        <div class="nav-item"><a href="#">Services</a></div>
+        <div class="nav-item"><a href="#">Experiences</a></div>
+        <div class="nav-item"><a href="#">List</a></div>
+      </nav>
 
-        <div class="search-bar">
-            <div class="search-bar-button">
-                <a href="#">Choose destination</a>
-            </div>
-            <div class="search-bar-button">
-                <a href="#">Add dates</a>
-            </div>
-            <div class="search-bar-button">
-                <a href="#">Add guests</a>
-            </div>
+      <div class="search-bar">
+        <div class="search-bar-button">
+          <a href="#">Choose destination</a>
         </div>
-
-        <div class="search-box">
-            <input type="text" placeholder="Search for your best destination...">
-            <button class="search-button" type="button">🔍</button>
+        <div class="search-bar-button">
+          <a href="#">Add dates</a>
         </div>
+        <div class="search-bar-button">
+          <a href="#">Add guests</a>
+        </div>
+      </div>
 
-        <div class="decorative-line"></div>
+      <div class="search-box">
+        <input type="text" placeholder="Search for your best destination..." />
+        <button class="search-button" type="button">🔍</button>
+      </div>
+
+      <div class="decorative-line"></div>
     </header>
-    <main></main>
+
+    <main>
+      <div class="cards-figure">
+        <div class="cards-container">
+          <h2>Popular homes in Syria</h2>
+          <div class="cards-row">
+            <div class="card">
+              <div class="card-fav">
+                <a href="https://en.wikipedia.org/wiki/Shawarma">
+                <svg
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    fill: rgba(0, 0, 0, 0.5);
+                    height: 24px;
+                    width: 24px;
+                    stroke: var(--palette-icon-primary-inverse);
+                    stroke-width: 2;
+                    overflow: visible;
+                  "
+                >
+                  <path
+                    d="m15.9998 28.6668c7.1667-4.8847 
+                    14.3334-10.8844 14.3334-18.1088 0-1.84951-.6993-3.69794-2.0988-5.10877-1.3996-1.4098-3.2332-2.11573-5.0679-2.11573-1.8336 
+                    0-3.6683.70593-5.0668 2.11573l-2.0999 2.11677-2.0988-2.11677c-1.3995-1.4098-3.2332-2.11573-5.06783-2.11573-1.83364 0-3.66831.70593-5.06683 
+                    2.11573-1.39955 1.41083-2.09984 3.25926-2.09984 5.10877 0 7.2244 7.16667 13.2241 14.3333 18.1088z"
+                  ></path>
+                </svg>
+                </a>
+              </div>
+              <a href="">
+                <div class="card-image">
+                  <img src="images/HotelRoom1.jpg" alt="" />
+                </div>
+                <div class="card-description">
+                  <div class="card-title"><h3>Lorem ipsum dolor</h3></div>
+                  <div class="card-paragraph">
+                    <p>Lorem ipsum dolor sit amet, consectetur a</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="card">
+              <div class="card-fav">
+                <a href="">
+                <svg
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    fill: rgba(0, 0, 0, 0.5);
+                    height: 24px;
+                    width: 24px;
+                    stroke: var(--palette-icon-primary-inverse);
+                    stroke-width: 2;
+                    overflow: visible;
+                  "
+                >
+                  <path
+                    d="m15.9998 28.6668c7.1667-4.8847 
+                    14.3334-10.8844 14.3334-18.1088 0-1.84951-.6993-3.69794-2.0988-5.10877-1.3996-1.4098-3.2332-2.11573-5.0679-2.11573-1.8336 
+                    0-3.6683.70593-5.0668 2.11573l-2.0999 2.11677-2.0988-2.11677c-1.3995-1.4098-3.2332-2.11573-5.06783-2.11573-1.83364 0-3.66831.70593-5.06683 
+                    2.11573-1.39955 1.41083-2.09984 3.25926-2.09984 5.10877 0 7.2244 7.16667 13.2241 14.3333 18.1088z"
+                  ></path>
+                </svg>
+                </a>
+              </div>
+              <a href="">
+                <div class="card-image">
+                  <img src="images/HotelRoom1.jpg" alt="" />
+                </div>
+                <div class="card-description">
+                  <div class="card-title"><h3>Lorem ipsum dolor</h3></div>
+                  <div class="card-paragraph">
+                    <p>Lorem ipsum dolor sit amet, consectetur a</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <div class="card-fav">
+                <a href="">
+                <svg
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    fill: rgba(0, 0, 0, 0.5);
+                    height: 24px;
+                    width: 24px;
+                    stroke: var(--palette-icon-primary-inverse);
+                    stroke-width: 2;
+                    overflow: visible;
+                  "
+                >
+                  <path
+                    d="m15.9998 28.6668c7.1667-4.8847 
+                    14.3334-10.8844 14.3334-18.1088 0-1.84951-.6993-3.69794-2.0988-5.10877-1.3996-1.4098-3.2332-2.11573-5.0679-2.11573-1.8336 
+                    0-3.6683.70593-5.0668 2.11573l-2.0999 2.11677-2.0988-2.11677c-1.3995-1.4098-3.2332-2.11573-5.06783-2.11573-1.83364 0-3.66831.70593-5.06683 
+                    2.11573-1.39955 1.41083-2.09984 3.25926-2.09984 5.10877 0 7.2244 7.16667 13.2241 14.3333 18.1088z"
+                  ></path>
+                </svg>
+                </a>
+              </div>
+              <a href="">
+                <div class="card-image">
+                  <img src="images/HotelRoom1.jpg" alt="" />
+                </div>
+                <div class="card-description">
+                  <div class="card-title"><h3>Lorem ipsum dolor</h3></div>
+                  <div class="card-paragraph">
+                    <p>Lorem ipsum dolor sit amet, consectetur a</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <div class="card-fav">
+                <a href="">
+                <svg
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    fill: rgba(0, 0, 0, 0.5);
+                    height: 24px;
+                    width: 24px;
+                    stroke: var(--palette-icon-primary-inverse);
+                    stroke-width: 2;
+                    overflow: visible;
+                  "
+                >
+                  <path
+                    d="m15.9998 28.6668c7.1667-4.8847 
+                    14.3334-10.8844 14.3334-18.1088 0-1.84951-.6993-3.69794-2.0988-5.10877-1.3996-1.4098-3.2332-2.11573-5.0679-2.11573-1.8336 
+                    0-3.6683.70593-5.0668 2.11573l-2.0999 2.11677-2.0988-2.11677c-1.3995-1.4098-3.2332-2.11573-5.06783-2.11573-1.83364 0-3.66831.70593-5.06683 
+                    2.11573-1.39955 1.41083-2.09984 3.25926-2.09984 5.10877 0 7.2244 7.16667 13.2241 14.3333 18.1088z"
+                  ></path>
+                </svg>
+                </a>
+              </div>
+              <a href="">
+                <div class="card-image">
+                  <img src="images/HotelRoom1.jpg" alt="" />
+                </div>
+                <div class="card-description">
+                  <div class="card-title"><h3>Lorem ipsum dolor</h3></div>
+                  <div class="card-paragraph">
+                    <p>Lorem ipsum dolor sit amet, consectetur a</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+             <div class="card">
+              <div class="card-fav">
+                <a href="">
+                <svg
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    fill: rgba(0, 0, 0, 0.5);
+                    height: 24px;
+                    width: 24px;
+                    stroke: var(--palette-icon-primary-inverse);
+                    stroke-width: 2;
+                    overflow: visible;
+                  "
+                >
+                  <path
+                    d="m15.9998 28.6668c7.1667-4.8847 
+                    14.3334-10.8844 14.3334-18.1088 0-1.84951-.6993-3.69794-2.0988-5.10877-1.3996-1.4098-3.2332-2.11573-5.0679-2.11573-1.8336 
+                    0-3.6683.70593-5.0668 2.11573l-2.0999 2.11677-2.0988-2.11677c-1.3995-1.4098-3.2332-2.11573-5.06783-2.11573-1.83364 0-3.66831.70593-5.06683 
+                    2.11573-1.39955 1.41083-2.09984 3.25926-2.09984 5.10877 0 7.2244 7.16667 13.2241 14.3333 18.1088z"
+                  ></path>
+                </svg>
+                </a>
+              </div>
+              <a href="">
+                <div class="card-image">
+                  <img src="images/HotelRoom1.jpg" alt="" />
+                </div>
+                <div class="card-description">
+                  <div class="card-title"><h3>Lorem ipsum dolor</h3></div>
+                  <div class="card-paragraph">
+                    <p>Lorem ipsum dolor sit amet, consectetur a</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="card">
+              <div class="card-fav">
+                <a href="">
+                <svg
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    fill: rgba(0, 0, 0, 0.5);
+                    height: 24px;
+                    width: 24px;
+                    stroke: var(--palette-icon-primary-inverse);
+                    stroke-width: 2;
+                    overflow: visible;
+                  "
+                >
+                  <path
+                    d="m15.9998 28.6668c7.1667-4.8847 
+                    14.3334-10.8844 14.3334-18.1088 0-1.84951-.6993-3.69794-2.0988-5.10877-1.3996-1.4098-3.2332-2.11573-5.0679-2.11573-1.8336 
+                    0-3.6683.70593-5.0668 2.11573l-2.0999 2.11677-2.0988-2.11677c-1.3995-1.4098-3.2332-2.11573-5.06783-2.11573-1.83364 0-3.66831.70593-5.06683 
+                    2.11573-1.39955 1.41083-2.09984 3.25926-2.09984 5.10877 0 7.2244 7.16667 13.2241 14.3333 18.1088z"
+                  ></path>
+                </svg>
+                </a>
+              </div>
+              <a href="">
+                <div class="card-image">
+                  <img src="images/HotelRoom1.jpg" alt="" />
+                </div>
+                <div class="card-description">
+                  <div class="card-title"><h3>Lorem ipsum dolor</h3></div>
+                  <div class="card-paragraph">
+                    <p>Lorem ipsum dolor sit amet, consectetur a</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards-figure">
+        <div class="cards-container">
+          <h2>Popular homes in Syria</h2>
+          <div class="cards-row">
+            <div class="card">
+              <div class="card-fav">
+                <a href="">
+                <svg
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    fill: rgba(0, 0, 0, 0.5);
+                    height: 24px;
+                    width: 24px;
+                    stroke: var(--palette-icon-primary-inverse);
+                    stroke-width: 2;
+                    overflow: visible;
+                  "
+                >
+                  <path
+                    d="m15.9998 28.6668c7.1667-4.8847 
+                    14.3334-10.8844 14.3334-18.1088 0-1.84951-.6993-3.69794-2.0988-5.10877-1.3996-1.4098-3.2332-2.11573-5.0679-2.11573-1.8336 
+                    0-3.6683.70593-5.0668 2.11573l-2.0999 2.11677-2.0988-2.11677c-1.3995-1.4098-3.2332-2.11573-5.06783-2.11573-1.83364 0-3.66831.70593-5.06683 
+                    2.11573-1.39955 1.41083-2.09984 3.25926-2.09984 5.10877 0 7.2244 7.16667 13.2241 14.3333 18.1088z"
+                  ></path>
+                </svg>
+                </a>
+              </div>
+              <a href="https://www.airbnb.com/">
+                <div class="card-image">
+                  <img src="images/HotelRoom1.jpg" alt="" />
+                </div>
+                <div class="card-description">
+                  <div class="card-title"><h3>Lorem ipsum dolor</h3></div>
+                  <div class="card-paragraph">
+                    <p>Lorem ipsum dolor sit amet, consectetur a</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <div class="card-fav">
+                <a href="">
+                <svg
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    fill: rgba(0, 0, 0, 0.5);
+                    height: 24px;
+                    width: 24px;
+                    stroke: var(--palette-icon-primary-inverse);
+                    stroke-width: 2;
+                    overflow: visible;
+                  "
+                >
+                  <path
+                    d="m15.9998 28.6668c7.1667-4.8847 
+                    14.3334-10.8844 14.3334-18.1088 0-1.84951-.6993-3.69794-2.0988-5.10877-1.3996-1.4098-3.2332-2.11573-5.0679-2.11573-1.8336 
+                    0-3.6683.70593-5.0668 2.11573l-2.0999 2.11677-2.0988-2.11677c-1.3995-1.4098-3.2332-2.11573-5.06783-2.11573-1.83364 0-3.66831.70593-5.06683 
+                    2.11573-1.39955 1.41083-2.09984 3.25926-2.09984 5.10877 0 7.2244 7.16667 13.2241 14.3333 18.1088z"
+                  ></path>
+                </svg>
+                </a>
+              </div>
+              <a href="">
+                <div class="card-image">
+                  <img src="images/HotelRoom1.jpg" alt="" />
+                </div>
+                <div class="card-description">
+                  <div class="card-title"><h3>Lorem ipsum dolor</h3></div>
+                  <div class="card-paragraph">
+                    <p>Lorem ipsum dolor sit amet, consectetur a</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <div class="card-fav">
+                <a href="">
+                <svg
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    fill: rgba(0, 0, 0, 0.5);
+                    height: 24px;
+                    width: 24px;
+                    stroke: var(--palette-icon-primary-inverse);
+                    stroke-width: 2;
+                    overflow: visible;
+                  "
+                >
+                  <path
+                    d="m15.9998 28.6668c7.1667-4.8847 
+                    14.3334-10.8844 14.3334-18.1088 0-1.84951-.6993-3.69794-2.0988-5.10877-1.3996-1.4098-3.2332-2.11573-5.0679-2.11573-1.8336 
+                    0-3.6683.70593-5.0668 2.11573l-2.0999 2.11677-2.0988-2.11677c-1.3995-1.4098-3.2332-2.11573-5.06783-2.11573-1.83364 0-3.66831.70593-5.06683 
+                    2.11573-1.39955 1.41083-2.09984 3.25926-2.09984 5.10877 0 7.2244 7.16667 13.2241 14.3333 18.1088z"
+                  ></path>
+                </svg>
+                </a>
+              </div>
+              <a href="">
+                <div class="card-image">
+                  <img src="images/HotelRoom1.jpg" alt="" />
+                </div>
+                <div class="card-description">
+                  <div class="card-title"><h3>Lorem ipsum dolor</h3></div>
+                  <div class="card-paragraph">
+                    <p>Lorem ipsum dolor sit amet, consectetur a</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <div class="card-fav">
+                <a href="">
+                <svg
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    fill: rgba(0, 0, 0, 0.5);
+                    height: 24px;
+                    width: 24px;
+                    stroke: var(--palette-icon-primary-inverse);
+                    stroke-width: 2;
+                    overflow: visible;
+                  "
+                >
+                  <path
+                    d="m15.9998 28.6668c7.1667-4.8847 
+                    14.3334-10.8844 14.3334-18.1088 0-1.84951-.6993-3.69794-2.0988-5.10877-1.3996-1.4098-3.2332-2.11573-5.0679-2.11573-1.8336 
+                    0-3.6683.70593-5.0668 2.11573l-2.0999 2.11677-2.0988-2.11677c-1.3995-1.4098-3.2332-2.11573-5.06783-2.11573-1.83364 0-3.66831.70593-5.06683 
+                    2.11573-1.39955 1.41083-2.09984 3.25926-2.09984 5.10877 0 7.2244 7.16667 13.2241 14.3333 18.1088z"
+                  ></path>
+                </svg>
+                </a>
+              </div>
+              <a href="">
+                <div class="card-image">
+                  <img src="images/HotelRoom1.jpg" alt="" />
+                </div>
+                <div class="card-description">
+                  <div class="card-title"><h3>Lorem ipsum dolor</h3></div>
+                  <div class="card-paragraph">
+                    <p>Lorem ipsum dolor sit amet, consectetur a</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+             <div class="card">
+              <div class="card-fav">
+                <a href="">
+                <svg
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    fill: rgba(0, 0, 0, 0.5);
+                    height: 24px;
+                    width: 24px;
+                    stroke: var(--palette-icon-primary-inverse);
+                    stroke-width: 2;
+                    overflow: visible;
+                  "
+                >
+                  <path
+                    d="m15.9998 28.6668c7.1667-4.8847 
+                    14.3334-10.8844 14.3334-18.1088 0-1.84951-.6993-3.69794-2.0988-5.10877-1.3996-1.4098-3.2332-2.11573-5.0679-2.11573-1.8336 
+                    0-3.6683.70593-5.0668 2.11573l-2.0999 2.11677-2.0988-2.11677c-1.3995-1.4098-3.2332-2.11573-5.06783-2.11573-1.83364 0-3.66831.70593-5.06683 
+                    2.11573-1.39955 1.41083-2.09984 3.25926-2.09984 5.10877 0 7.2244 7.16667 13.2241 14.3333 18.1088z"
+                  ></path>
+                </svg>
+                </a>
+              </div>
+              <a href="">
+                <div class="card-image">
+                  <img src="images/HotelRoom1.jpg" alt="" />
+                </div>
+                <div class="card-description">
+                  <div class="card-title"><h3>Lorem ipsum dolor</h3></div>
+                  <div class="card-paragraph">
+                    <p>Lorem ipsum dolor sit amet, consectetur a</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="card">
+              <div class="card-fav">
+                <a href="">
+                <svg
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    fill: rgba(0, 0, 0, 0.5);
+                    height: 24px;
+                    width: 24px;
+                    stroke: var(--palette-icon-primary-inverse);
+                    stroke-width: 2;
+                    overflow: visible;
+                  "
+                >
+                  <path
+                    d="m15.9998 28.6668c7.1667-4.8847 
+                    14.3334-10.8844 14.3334-18.1088 0-1.84951-.6993-3.69794-2.0988-5.10877-1.3996-1.4098-3.2332-2.11573-5.0679-2.11573-1.8336 
+                    0-3.6683.70593-5.0668 2.11573l-2.0999 2.11677-2.0988-2.11677c-1.3995-1.4098-3.2332-2.11573-5.06783-2.11573-1.83364 0-3.66831.70593-5.06683 
+                    2.11573-1.39955 1.41083-2.09984 3.25926-2.09984 5.10877 0 7.2244 7.16667 13.2241 14.3333 18.1088z"
+                  ></path>
+                </svg>
+                </a>
+              </div>
+              <a href="">
+                <div class="card-image">
+                  <img src="images/HotelRoom1.jpg" alt="" />
+                </div>
+                <div class="card-description">
+                  <div class="card-title"><h3>Lorem ipsum dolor</h3></div>
+                  <div class="card-paragraph">
+                    <p>Lorem ipsum dolor sit amet, consectetur a</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards-figure">
+        <div class="cards-container">
+          <h2>Popular homes in Syria</h2>
+          <div class="cards-row">
+            <div class="card">
+              <div class="card-fav">
+                <a href="">
+                <svg
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    fill: rgba(0, 0, 0, 0.5);
+                    height: 24px;
+                    width: 24px;
+                    stroke: var(--palette-icon-primary-inverse);
+                    stroke-width: 2;
+                    overflow: visible;
+                  "
+                >
+                  <path
+                    d="m15.9998 28.6668c7.1667-4.8847 
+                    14.3334-10.8844 14.3334-18.1088 0-1.84951-.6993-3.69794-2.0988-5.10877-1.3996-1.4098-3.2332-2.11573-5.0679-2.11573-1.8336 
+                    0-3.6683.70593-5.0668 2.11573l-2.0999 2.11677-2.0988-2.11677c-1.3995-1.4098-3.2332-2.11573-5.06783-2.11573-1.83364 0-3.66831.70593-5.06683 
+                    2.11573-1.39955 1.41083-2.09984 3.25926-2.09984 5.10877 0 7.2244 7.16667 13.2241 14.3333 18.1088z"
+                  ></path>
+                </svg>
+                </a>
+              </div>
+              <a href="">
+                <div class="card-image">
+                  <img src="images/HotelRoom1.jpg" alt="" />
+                </div>
+                <div class="card-description">
+                  <div class="card-title"><h3>Lorem ipsum dolor</h3></div>
+                  <div class="card-paragraph">
+                    <p>Lorem ipsum dolor sit amet, consectetur a</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <div class="card-fav">
+                <a href="">
+                <svg
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    fill: rgba(0, 0, 0, 0.5);
+                    height: 24px;
+                    width: 24px;
+                    stroke: var(--palette-icon-primary-inverse);
+                    stroke-width: 2;
+                    overflow: visible;
+                  "
+                >
+                  <path
+                    d="m15.9998 28.6668c7.1667-4.8847 
+                    14.3334-10.8844 14.3334-18.1088 0-1.84951-.6993-3.69794-2.0988-5.10877-1.3996-1.4098-3.2332-2.11573-5.0679-2.11573-1.8336 
+                    0-3.6683.70593-5.0668 2.11573l-2.0999 2.11677-2.0988-2.11677c-1.3995-1.4098-3.2332-2.11573-5.06783-2.11573-1.83364 0-3.66831.70593-5.06683 
+                    2.11573-1.39955 1.41083-2.09984 3.25926-2.09984 5.10877 0 7.2244 7.16667 13.2241 14.3333 18.1088z"
+                  ></path>
+                </svg>
+                </a>
+              </div>
+              <a href="">
+                <div class="card-image">
+                  <img src="images/HotelRoom1.jpg" alt="" />
+                </div>
+                <div class="card-description">
+                  <div class="card-title"><h3>Lorem ipsum dolor</h3></div>
+                  <div class="card-paragraph">
+                    <p>Lorem ipsum dolor sit amet, consectetur a</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <div class="card-fav">
+                <a href="">
+                <svg
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    fill: rgba(0, 0, 0, 0.5);
+                    height: 24px;
+                    width: 24px;
+                    stroke: var(--palette-icon-primary-inverse);
+                    stroke-width: 2;
+                    overflow: visible;
+                  "
+                >
+                  <path
+                    d="m15.9998 28.6668c7.1667-4.8847 
+                    14.3334-10.8844 14.3334-18.1088 0-1.84951-.6993-3.69794-2.0988-5.10877-1.3996-1.4098-3.2332-2.11573-5.0679-2.11573-1.8336 
+                    0-3.6683.70593-5.0668 2.11573l-2.0999 2.11677-2.0988-2.11677c-1.3995-1.4098-3.2332-2.11573-5.06783-2.11573-1.83364 0-3.66831.70593-5.06683 
+                    2.11573-1.39955 1.41083-2.09984 3.25926-2.09984 5.10877 0 7.2244 7.16667 13.2241 14.3333 18.1088z"
+                  ></path>
+                </svg>
+                </a>
+              </div>
+              <a href="">
+                <div class="card-image">
+                  <img src="images/HotelRoom1.jpg" alt="" />
+                </div>
+                <div class="card-description">
+                  <div class="card-title"><h3>Lorem ipsum dolor</h3></div>
+                  <div class="card-paragraph">
+                    <p>Lorem ipsum dolor sit amet, consectetur a</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            
+            <div class="card">
+              <div class="card-fav">
+                <a href="">
+                <svg
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    fill: rgba(0, 0, 0, 0.5);
+                    height: 24px;
+                    width: 24px;
+                    stroke: var(--palette-icon-primary-inverse);
+                    stroke-width: 2;
+                    overflow: visible;
+                  "
+                >
+                  <path
+                    d="m15.9998 28.6668c7.1667-4.8847 
+                    14.3334-10.8844 14.3334-18.1088 0-1.84951-.6993-3.69794-2.0988-5.10877-1.3996-1.4098-3.2332-2.11573-5.0679-2.11573-1.8336 
+                    0-3.6683.70593-5.0668 2.11573l-2.0999 2.11677-2.0988-2.11677c-1.3995-1.4098-3.2332-2.11573-5.06783-2.11573-1.83364 0-3.66831.70593-5.06683 
+                    2.11573-1.39955 1.41083-2.09984 3.25926-2.09984 5.10877 0 7.2244 7.16667 13.2241 14.3333 18.1088z"
+                  ></path>
+                </svg>
+                </a>
+              </div>
+              <a href="">
+                <div class="card-image">
+                  <img src="images/HotelRoom1.jpg" alt="" />
+                </div>
+                <div class="card-description">
+                  <div class="card-title"><h3>Lorem ipsum dolor</h3></div>
+                  <div class="card-paragraph">
+                    <p>Lorem ipsum dolor sit amet, consectetur a</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+             <div class="card">
+              <div class="card-fav">
+                <a href="">
+                <svg
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    fill: rgba(0, 0, 0, 0.5);
+                    height: 24px;
+                    width: 24px;
+                    stroke: var(--palette-icon-primary-inverse);
+                    stroke-width: 2;
+                    overflow: visible;
+                  "
+                >
+                  <path
+                    d="m15.9998 28.6668c7.1667-4.8847 
+                    14.3334-10.8844 14.3334-18.1088 0-1.84951-.6993-3.69794-2.0988-5.10877-1.3996-1.4098-3.2332-2.11573-5.0679-2.11573-1.8336 
+                    0-3.6683.70593-5.0668 2.11573l-2.0999 2.11677-2.0988-2.11677c-1.3995-1.4098-3.2332-2.11573-5.06783-2.11573-1.83364 0-3.66831.70593-5.06683 
+                    2.11573-1.39955 1.41083-2.09984 3.25926-2.09984 5.10877 0 7.2244 7.16667 13.2241 14.3333 18.1088z"
+                  ></path>
+                </svg>
+                </a>
+              </div>
+              <a href="">
+                <div class="card-image">
+                  <img src="images/HotelRoom1.jpg" alt="" />
+                </div>
+                <div class="card-description">
+                  <div class="card-title"><h3>Lorem ipsum dolor</h3></div>
+                  <div class="card-paragraph">
+                    <p>Lorem ipsum dolor sit amet, consectetur a</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="card">
+              <div class="card-fav">
+                <a href="">
+                <svg
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    fill: rgba(0, 0, 0, 0.5);
+                    height: 24px;
+                    width: 24px;
+                    stroke: var(--palette-icon-primary-inverse);
+                    stroke-width: 2;
+                    overflow: visible;
+                  "
+                >
+                  <path
+                    d="m15.9998 28.6668c7.1667-4.8847 
+                    14.3334-10.8844 14.3334-18.1088 0-1.84951-.6993-3.69794-2.0988-5.10877-1.3996-1.4098-3.2332-2.11573-5.0679-2.11573-1.8336 
+                    0-3.6683.70593-5.0668 2.11573l-2.0999 2.11677-2.0988-2.11677c-1.3995-1.4098-3.2332-2.11573-5.06783-2.11573-1.83364 0-3.66831.70593-5.06683 
+                    2.11573-1.39955 1.41083-2.09984 3.25926-2.09984 5.10877 0 7.2244 7.16667 13.2241 14.3333 18.1088z"
+                  ></path>
+                </svg>
+                </a>
+              </div>
+              <a href="">
+                <div class="card-image">
+                  <img src="images/HotelRoom1.jpg" alt="" />
+                </div>
+                <div class="card-description">
+                  <div class="card-title"><h3>Lorem ipsum dolor</h3></div>
+                  <div class="card-paragraph">
+                    <p>Lorem ipsum dolor sit amet, consectetur a</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Support</h3>
-                <ul>
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">AirCover</a></li>
-                    <li><a href="#">Anti-discrimination</a></li>
-                    <li><a href="#">Disability support</a></li>
-                    <li><a href="#">Cancellation options</a></li>
-                    <li><a href="#">Report neighborhood concern</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Hosting</h3>
-                <ul>
-                    <li><a href="#">Airbnb your home</a></li>
-                    <li><a href="#">AirCover for Hosts</a></li>
-                    <li><a href="#">Hosting resources</a></li>
-                    <li><a href="#">Community forum</a></li>
-                    <li><a href="#">Hosting responsibly</a></li>
-                    <li><a href="#">Airbnb-friendly apartments</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Airbnb</h3>
-                <ul>
-                    <li><a href="#">Newsroom</a></li>
-                    <li><a href="#">New features</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Investors</a></li>
-                    <li><a href="#">Gift cards</a></li>
-                    <li><a href="#">Airbnb.org emergency stays</a></li>
-                </ul>
-            </div>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">AirCover</a></li>
+            <li><a href="#">Anti-discrimination</a></li>
+            <li><a href="#">Disability support</a></li>
+            <li><a href="#">Cancellation options</a></li>
+            <li><a href="#">Report neighborhood concern</a></li>
+          </ul>
         </div>
-        <hr>
-        <div class="footer-bottom">
-            <div class="footer-bottom-left">
-                <span>&copy; 2025 Airbnb, Inc.</span>
-                <span class="dot">·</span>
-                <a href="#">Privacy</a>
-                <span class="dot">·</span>
-                <a href="#">Terms</a>
-                <span class="dot">·</span>
-                <a href="#">Sitemap</a>
-            </div>
-            <div class="footer-bottom-right">
-                <div class="settings">
-                    <a href="#"><span>🌐</span>English (US)</a>
-                    <a href="#">$ USD</a>
-                </div>
-                <div class="social-icons">
-                    <a href="#">FB</a>
-                    <a href="#">TW</a>
-                    <a href="#">IG</a>
-                </div>
-            </div>
+        <div class="footer-section">
+          <h3>Hosting</h3>
+          <ul>
+            <li><a href="#">Airbnb your home</a></li>
+            <li><a href="#">AirCover for Hosts</a></li>
+            <li><a href="#">Hosting resources</a></li>
+            <li><a href="#">Community forum</a></li>
+            <li><a href="#">Hosting responsibly</a></li>
+            <li><a href="#">Airbnb-friendly apartments</a></li>
+          </ul>
         </div>
+        <div class="footer-section">
+          <h3>Airbnb</h3>
+          <ul>
+            <li><a href="#">Newsroom</a></li>
+            <li><a href="#">New features</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Gift cards</a></li>
+            <li><a href="#">Airbnb.org emergency stays</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <span>&copy; 2025 Airbnb, Inc.</span>
+          <span class="dot">·</span>
+          <a href="#">Privacy</a>
+          <span class="dot">·</span>
+          <a href="#">Terms</a>
+          <span class="dot">·</span>
+          <a href="#">Sitemap</a>
+        </div>
+        <div class="footer-bottom-right">
+          <div class="settings">
+            <a href="#"><span>🌐</span>English (US)</a>
+            <a href="#">$ USD</a>
+          </div>
+          <div class="social-icons">
+            <a href="#">FB</a>
+            <a href="#">TW</a>
+            <a href="#">IG</a>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
