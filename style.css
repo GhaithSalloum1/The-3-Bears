@@ -9,7 +9,7 @@ body {
 }
 
 :root {
-  --footer-background-color: #f7f7f7;
+  --footer-background-color: #edebeb;
   --footer-section-links-color: #222222;
   --hr-color: #eeecec;
 }
@@ -65,9 +65,20 @@ body {
 }
 
 .card-fav svg {
+    fill: rgba(0, 0, 0, 0.5);
     stroke: white !important;
     stroke-width: 7px !important;
     paint-order: stroke fill;
+    transition: fill 0.3s ease, transform 0.2s ease;
+}
+
+.card-fav.active svg {
+    fill: #FF385C !important; 
+    stroke: #FF385C !important; 
+}
+
+.card-fav:active svg {
+    transform: scale(0.8);
 }
 
 .card h3{
@@ -118,6 +129,7 @@ footer {
     background-color: var(--footer-background-color);
     padding: 48px 80px;
     border-top: 1px solid #DDDDDD;
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.9);
     font-size: 14px;
 }
 
