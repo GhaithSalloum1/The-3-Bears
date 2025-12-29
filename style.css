@@ -47,8 +47,17 @@ body {
     width: 185.904px;
     height: 262.575px;
     position: relative;
-    
+
 }
+
+.card:hover{
+  transform: scale(1.03);
+  border-radius: 16px;
+  transition: 0.3s ease;
+  box-shadow: 0 30px 20px rgba(0, 0, 0, 0.05);
+}
+
+
 
 .card a {
   text-decoration: none;
@@ -69,7 +78,7 @@ body {
     stroke: white !important;
     stroke-width: 7px !important;
     paint-order: stroke fill;
-    transition: fill 0.3s ease, transform 0.2s ease;
+    transition: fill 1s ease, transform 0.2s ease;
 }
 
 .card-fav.active svg {
@@ -102,6 +111,8 @@ body {
 
 .card-description{
     max-height: 62.971px;
+    margin-left: 7px;
+    margin-right: 7px;
     overflow: hidden;
 }
 

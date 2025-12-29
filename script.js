@@ -44,7 +44,7 @@ function createFigure(sectionTitle, dataList) {
             <div class="card-fav">
                 <a href="#">${heartIcon}</a>
             </div>
-            <a href="${home.link}">
+            <a href="#">
                 <div class="card-image"><img src="${home.image}"></div>
                 <div class="card-description">
                     <h3>${home.title}</h3>
