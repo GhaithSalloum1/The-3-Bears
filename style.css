@@ -58,7 +58,7 @@ body {
 
 .card-fav {
   position: absolute;
-  top: 25px;
+  top: 40px;
   right: 15px;
   z-index: 10; 
   cursor: pointer;
