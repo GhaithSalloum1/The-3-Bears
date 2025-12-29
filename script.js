@@ -1,28 +1,28 @@
 const syriaHomes = [
-    { title: "Old City Damascus", image: "images/Damascus1.jpg", description: "Historic courtyard house", link: "room-s1.html" },
-    { title: "Aleppo Citadel View", image: "images/Aleppo1.jpg", description: "Modern flat near the castle", link: "room-s2.html" },
-    { title: "Latakia Resort", image: "images/Latakia1.jpg", description: "Beachfront villa", link: "room-s3.html" },
-    { title: "Homs Garden Suite", image: "images/Homs1.jpg", description: "Spacious family apartment", link: "room-s4.html" },
-    { title: "Tartus Sea Breeze", image: "images/Tartus1.jpg", description: "Cozy studio by the port", link: "room-s5.html" },
-    { title: "Palmyra Sands", image: "images/Palmyra1.jpg", description: "Desert oasis retreat", link: "room-s6.html" }
+    { title: "Old City Damascus", image: "/images/syria_1.jpg", description: "Historic courtyard house", link: "room-s1.html" },
+    { title: "Aleppo Citadel View", image: "/images/syria_2.jpg", description: "Modern flat near the castle", link: "room-s2.html" },
+    { title: "Latakia Resort", image: "/images/syria_3.jpg", description: "Beachfront villa", link: "room-s3.html" },
+    { title: "Homs Garden Suite", image: "/images/syria_4.webp", description: "Spacious family apartment", link: "room-s4.html" },
+    { title: "Tartus Sea Breeze", image: "/images/syria_5.jpg", description: "Cozy studio by the port", link: "room-s5.html" },
+    { title: "Palmyra Sands", image: "/images/syria_6.jpg", description: "Desert oasis retreat", link: "room-s6.html" }
 ];
 
 const lebanonHomes = [
-    { title: "Beirut Downtown", image: "images/Beirut-Downtown.webp", description: "Luxury loft in the heart of the city", link: "room-l1.html" },
-    { title: "Byblos Ancient Harbor", image: "images/Byblos1.jpg", description: "Studio overlooking the ruins", link: "room-l2.html" },
-    { title: "Faraya Snow Cabin", image: "images/Faraya1.jpg", description: "Mountain chalet with fireplace", link: "room-l3.html" },
-    { title: "Batroun Beach Hut", image: "images/Batroun1.jpg", description: "Surfside wooden cabin", link: "room-l4.html" },
-    { title: "Jeita Grotto Loft", image: "images/Jeita1.jpg", description: "Quiet stay near the caves", link: "room-l5.html" },
-    { title: "Tyre Coastal Villa", image: "images/Tyre1.jpg", description: "Traditional blue and white house", link: "room-l6.html" }
+    { title: "Beirut Downtown", image: "/images/lebanon_1.jpg", description: "Luxury loft in the heart of the city", link: "room-l1.html" },
+    { title: "Byblos Ancient Harbor", image: "/images/lebanon_2.jpg", description: "Studio overlooking the ruins", link: "room-l2.html" },
+    { title: "Faraya Snow Cabin", image: "/images/lebanon_3.webp", description: "Mountain chalet with fireplace", link: "room-l3.html" },
+    { title: "Batroun Beach Hut", image: "/images/lebanon_4.jfif", description: "Surfside wooden cabin", link: "room-l4.html" },
+    { title: "Jeita Grotto Loft", image: "/images/lebanon_5.jpg", description: "Quiet stay near the caves", link: "room-l5.html" },
+    { title: "Tyre Coastal Villa", image: "/images/lebanon_6.jpg", description: "Traditional blue and white house", link: "room-l6.html" }
 ];
 
 const jordanHomes = [
-    { title: "Amman Rainbow St.", image: "images/Amman1.jpg", description: "Artist loft with city views", link: "room-j1.html" },
-    { title: "Petra Cave Hotel", image: "images/Petra1.jpg", description: "Authentic stay inside a cave", link: "room-j2.html" },
-    { title: "Wadi Rum Glamping", image: "images/WadiRum1.jpg", description: "Martian-style dome tent", link: "room-j3.html" },
-    { title: "Dead Sea Spa", image: "images/DeadSea1.jpg", description: "Apartment with private pool", link: "room-j4.html" },
-    { title: "Aqaba Yacht", image: "images/Aqaba1.jpg", description: "Stay on a boat in the Red Sea", link: "room-j5.html" },
-    { title: "Madaba Mosaic", image: "images/Madaba1.jpg", description: "Charming historical cottage", link: "room-j6.html" }
+    { title: "Amman Rainbow St.", image: "/images/jordan_1.jpg", description: "Artist loft with city views", link: "room-j1.html" },
+    { title: "Petra Cave Hotel", image: "/images/jordan_2.jpg", description: "Authentic stay inside a cave", link: "room-j2.html" },
+    { title: "Wadi Rum Glamping", image: "/images/jordan_3.jpg", description: "Martian-style dome tent", link: "room-j3.html" },
+    { title: "Dead Sea Spa", image: "/images/jordan_4.jpg", description: "Apartment with private pool", link: "room-j4.html" },
+    { title: "Aqaba Yacht", image: "/images/jordan_5.webp", description: "Stay on a boat in the Red Sea", link: "room-j5.html" },
+    { title: "Madaba Mosaic", image: "/images/jordan_6.webp", description: "Charming historical cottage", link: "room-j6.html" }
 ];
 
 
@@ -63,6 +63,21 @@ function createFigure(sectionTitle, dataList) {
         </div>
     `;
 }
+
+document.addEventListener('click', function (event) {
+    
+    const heartBtn = event.target.closest('.card-fav');
+
+    if (heartBtn) {
+        event.preventDefault(); 
+
+        event.stopPropagation(); 
+
+        heartBtn.classList.toggle('active');
+        
+        console.log("Heart toggled!");
+    }
+});
 
 const mainSection = document.getElementById('main-content');
 
