@@ -182,6 +182,19 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding-top: 24px;
+  font-size: 14px;
+}
+
+.footer-bottom-left, .footer-bottom-right, .settings, .social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icons svg {
+  width: 18px;
+  height: 18px;
+  fill: #222222;
 }
 
 .footer-bottom a {
