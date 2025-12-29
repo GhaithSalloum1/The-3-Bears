@@ -8,12 +8,12 @@ const syriaHomes = [
 ];
 
 const lebanonHomes = [
-    { title: "Beirut Downtown", image: "/images/lebanon_1.jpg", description: "Luxury loft in the heart of the city", link: "room-l1.html" },
+    { title: "Beirut Downtown", image: "/images/lebanon_1.jpg", description: "Luxury loft in the the city", link: "room-l1.html" },
     { title: "Byblos Ancient Harbor", image: "/images/lebanon_2.jpg", description: "Studio overlooking the ruins", link: "room-l2.html" },
     { title: "Faraya Snow Cabin", image: "/images/lebanon_3.webp", description: "Mountain chalet with fireplace", link: "room-l3.html" },
     { title: "Batroun Beach Hut", image: "/images/lebanon_4.jfif", description: "Surfside wooden cabin", link: "room-l4.html" },
     { title: "Jeita Grotto Loft", image: "/images/lebanon_5.jpg", description: "Quiet stay near the caves", link: "room-l5.html" },
-    { title: "Tyre Coastal Villa", image: "/images/lebanon_6.jpg", description: "Traditional blue and white house", link: "room-l6.html" }
+    { title: "Tyre Coastal Villa", image: "/images/lebanon_6.jpg", description: "Traditional white house", link: "room-l6.html" }
 ];
 
 const jordanHomes = [

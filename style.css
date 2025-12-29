@@ -30,6 +30,10 @@ body {
     gap: 10px;
 }
 
+.cards-container h2{
+  margin-bottom: 0;
+}
+
 .cards-row{
     display: flex;
     flex-direction: row;
@@ -76,7 +80,7 @@ body {
 .card-fav svg {
     fill: rgba(0, 0, 0, 0.5);
     stroke: white !important;
-    stroke-width: 7px !important;
+    stroke-width: 4px !important;
     paint-order: stroke fill;
     transition: fill 1s ease, transform 0.2s ease;
 }
