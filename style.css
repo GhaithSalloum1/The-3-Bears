@@ -81,7 +81,7 @@ main {
 
 .card-fav {
   position: absolute;
-  top: 40px;
+  top: 25px;
   right: 15px;
   z-index: 10;
   cursor: pointer;
@@ -127,7 +127,7 @@ main {
 }
 
 .card-description {
-  max-height: 62.971px;
+  min-height: 62.971px;
   margin-left: 7px;
   margin-right: 7px;
   overflow: hidden;
