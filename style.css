@@ -33,6 +33,17 @@ main {
   gap: 10px;
 }
 
+.cards-container h2{
+  margin-bottom: 0;
+}
+
+.cards-row{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
 .cards-container h2 {
   margin-bottom: 0;
 }
@@ -70,13 +81,18 @@ main {
 
 .card-fav {
   position: absolute;
-  top: 40px;
+  top: 25px;
   right: 15px;
   z-index: 10;
   cursor: pointer;
 }
 
 .card-fav svg {
+  fill: rgba(0, 0, 0, 0.5);
+  stroke: white !important;
+  stroke-width: 4px !important;
+  paint-order: stroke fill;
+  transition: fill 1s ease, transform 0.2s ease;
   fill: rgba(0, 0, 0, 0.5);
   stroke: white !important;
   stroke-width: 4px !important;
@@ -178,6 +194,19 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding-top: 24px;
+  font-size: 14px;
+}
+
+.footer-bottom-left, .footer-bottom-right, .settings, .social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icons svg {
+  width: 18px;
+  height: 18px;
+  fill: #222222;
 }
 
 .footer-bottom a {
