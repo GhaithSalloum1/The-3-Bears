@@ -9,6 +9,7 @@ const syriaHomes = [
 
 const lebanonHomes = [
     { title: "Beirut Downtown", image: "/images/lebanon_1.jpg", description: "Luxury loft in the city", link: "room-l1.html" },
+    { title: "Beirut Downtown", image: "/images/lebanon_1.jpg", description: "Luxury loft in the the city", link: "room-l1.html" },
     { title: "Byblos Ancient Harbor", image: "/images/lebanon_2.jpg", description: "Studio overlooking the ruins", link: "room-l2.html" },
     { title: "Faraya Snow Cabin", image: "/images/lebanon_3.webp", description: "Mountain chalet with fireplace", link: "room-l3.html" },
     { title: "Batroun Beach Hut", image: "/images/lebanon_4.jfif", description: "Surfside wooden cabin", link: "room-l4.html" },
