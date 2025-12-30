@@ -8,6 +8,7 @@ const syriaHomes = [
 ];
 
 const lebanonHomes = [
+    { title: "Beirut Downtown", image: "/images/lebanon_1.jpg", description: "Luxury loft in the city", link: "room-l1.html" },
     { title: "Beirut Downtown", image: "/images/lebanon_1.jpg", description: "Luxury loft in the the city", link: "room-l1.html" },
     { title: "Byblos Ancient Harbor", image: "/images/lebanon_2.jpg", description: "Studio overlooking the ruins", link: "room-l2.html" },
     { title: "Faraya Snow Cabin", image: "/images/lebanon_3.webp", description: "Mountain chalet with fireplace", link: "room-l3.html" },
@@ -85,5 +86,17 @@ mainSection.innerHTML =
     createFigure("Popular homes in Syria", syriaHomes) +
     createFigure("Featured stays in Lebanon", lebanonHomes) +
     createFigure("Top destinations in Jordan", jordanHomes);
-
   
+let lastScroll = 0;
+        
+window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+    
+    if (currentScroll > 100) {
+        document.body.classList.add('scrolled');
+    } else {
+        document.body.classList.remove('scrolled');
+    }
+    
+    lastScroll = currentScroll;
+});
